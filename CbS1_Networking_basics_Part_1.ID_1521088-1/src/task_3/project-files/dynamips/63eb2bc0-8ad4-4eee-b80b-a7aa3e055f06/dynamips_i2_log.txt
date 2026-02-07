@@ -1,0 +1,39 @@
+Jun 19 03:54:25.865 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jun 19 03:54:25.865 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 40447.
+Jun 19 03:54:25.873 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 19 03:54:25.874 HYPERVISOR: exec_cmd: hypervisor working_dir /home/habeeb/GNS3/projects/tesk 2/project-files/dynamips 
+Jun 19 03:54:25.874 GENERAL: working_dir=/home/habeeb/GNS3/projects/tesk 2/project-files/dynamips
+Jun 19 03:54:25.874 HYPERVISOR: exec_cmd: hypervisor working_dir /home/habeeb/GNS3/projects/tesk 2/project-files/dynamips/4531614f-db20-41bf-9165-09a59df52cee 
+Jun 19 03:54:25.874 GENERAL: working_dir=/home/habeeb/GNS3/projects/tesk 2/project-files/dynamips/4531614f-db20-41bf-9165-09a59df52cee
+Jun 19 03:54:25.874 HYPERVISOR: exec_cmd: vm create R2 2 c3745 
+Jun 19 03:54:25.874 VM: VM R2 created.
+Jun 19 03:54:25.874 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+Jun 19 03:54:25.874 HYPERVISOR: exec_cmd: c3745 get_mac_addr R2 
+Jun 19 03:54:25.874 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Jun 19 03:54:25.875 HYPERVISOR: exec_cmd: vm set_ios R2 /home/habeeb/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Jun 19 03:54:25.875 HYPERVISOR: exec_cmd: c3745 set_mac_addr R2 c402.14da.0000 
+Jun 19 03:54:25.875 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Jun 19 03:54:25.875 HYPERVISOR: exec_cmd: vm set_ram R2 256 
+Jun 19 03:54:25.875 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 19 03:54:25.875 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 NM-16ESW 
+Jun 19 03:54:25.911 HYPERVISOR: exec_cmd: nio create_udp udp-5e61b6cd-9568-4866-ac30-493ac1cba140 10002 127.0.0.1 10003 
+Jun 19 03:54:26.120 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-5e61b6cd-9568-4866-ac30-493ac1cba140 
+Jun 19 03:54:26.120 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 19 03:54:33.931 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Jun 19 03:54:33.931 HYPERVISOR: exec_cmd: vm set_ghost_file R2 /home/habeeb/GNS3/projects/tesk 2/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Jun 19 03:54:33.932 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 19 03:54:33.937 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+Jun 19 03:54:33.937 HYPERVISOR: exec_cmd: vm start R2 
+Jun 19 04:32:38.721 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 19 04:32:38.731 HYPERVISOR: exec_cmd: vm slot_disable_nio R2 0 0 
+Jun 19 04:32:38.746 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R2 0 0 
+Jun 19 04:32:38.747 HYPERVISOR: exec_cmd: nio delete udp-5e61b6cd-9568-4866-ac30-493ac1cba140 
+Jun 19 04:32:39.227 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 19 04:32:39.227 HYPERVISOR: exec_cmd: vm stop R2 
+Jun 19 04:32:39.248 VM: VM R2 shutdown.
+Jun 19 04:32:39.248 HYPERVISOR: exec_cmd: vm extract_config R2 
+Jun 19 04:32:39.250 HYPERVISOR: exec_cmd: vm delete R2 
+Jun 19 04:32:39.250 VM: VM R2 destroyed.
+Jun 19 04:32:39.251 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 19 04:32:39.583 HYPERVISOR: Stopped.
+Jun 19 04:32:39.583 GENERAL: reset done.

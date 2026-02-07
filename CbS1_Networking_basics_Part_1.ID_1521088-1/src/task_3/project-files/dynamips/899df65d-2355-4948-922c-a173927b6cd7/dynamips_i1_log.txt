@@ -1,0 +1,26 @@
+Jun 13 13:00:31.385 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jun 13 13:00:31.385 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 33933.
+Jun 13 13:00:31.388 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 13 13:00:31.388 HYPERVISOR: exec_cmd: hypervisor working_dir /home/habeeb/GNS3/projects/tesk 2/project-files/dynamips 
+Jun 13 13:00:31.388 GENERAL: working_dir=/home/habeeb/GNS3/projects/tesk 2/project-files/dynamips
+Jun 13 13:00:31.388 HYPERVISOR: exec_cmd: hypervisor working_dir /home/habeeb/GNS3/projects/tesk 2/project-files/dynamips/899df65d-2355-4948-922c-a173927b6cd7 
+Jun 13 13:00:31.388 GENERAL: working_dir=/home/habeeb/GNS3/projects/tesk 2/project-files/dynamips/899df65d-2355-4948-922c-a173927b6cd7
+Jun 13 13:00:31.388 HYPERVISOR: exec_cmd: vm create R1 1 c3745 
+Jun 13 13:00:31.388 VM: VM R1 created.
+Jun 13 13:00:31.388 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Jun 13 13:00:31.388 HYPERVISOR: exec_cmd: c3745 get_mac_addr R1 
+Jun 13 13:00:31.389 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Jun 13 13:00:31.389 HYPERVISOR: exec_cmd: vm set_ios R1 /home/habeeb/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Jun 13 13:00:31.389 HYPERVISOR: exec_cmd: c3745 set_mac_addr R1 c401.120b.0000 
+Jun 13 13:00:31.389 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Jun 13 13:00:31.389 HYPERVISOR: exec_cmd: vm set_ram R1 256 
+Jun 13 13:00:31.389 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 13 13:00:31.389 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 NM-16ESW 
+Jun 13 13:00:31.692 HYPERVISOR: exec_cmd: nio create_udp udp-e3d0fa72-26fb-46c9-9f97-fc81f1244e26 10004 127.0.0.1 10005 
+Jun 13 13:00:31.901 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-e3d0fa72-26fb-46c9-9f97-fc81f1244e26 
+Jun 13 13:00:31.901 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 13 13:00:51.368 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Jun 13 13:00:51.368 HYPERVISOR: exec_cmd: vm set_ghost_file R1 /home/habeeb/GNS3/projects/tesk 2/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Jun 13 13:00:51.369 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 13 13:00:51.369 HYPERVISOR: exec_cmd: vm set_config R1 configs/i1_startup-config.cfg 
+Jun 13 13:00:51.369 HYPERVISOR: exec_cmd: vm start R1 
