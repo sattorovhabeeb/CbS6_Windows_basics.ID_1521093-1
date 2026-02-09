@@ -1,0 +1,31 @@
+Jul 19 03:45:16.699 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jul 19 03:45:16.699 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 53647.
+Jul 19 03:45:16.707 HYPERVISOR: exec_cmd: hypervisor version 
+Jul 19 03:45:16.707 HYPERVISOR: exec_cmd: hypervisor working_dir /home/habeeb/GNS3/projects/ssh/project-files/dynamips 
+Jul 19 03:45:16.707 GENERAL: working_dir=/home/habeeb/GNS3/projects/ssh/project-files/dynamips
+Jul 19 03:45:16.707 HYPERVISOR: exec_cmd: hypervisor working_dir /home/habeeb/GNS3/projects/ssh/project-files/dynamips/66e7412c-0f80-48bb-a758-9be73252b9aa 
+Jul 19 03:45:16.707 GENERAL: working_dir=/home/habeeb/GNS3/projects/ssh/project-files/dynamips/66e7412c-0f80-48bb-a758-9be73252b9aa
+Jul 19 03:45:16.707 HYPERVISOR: exec_cmd: vm create R2 2 c3745 
+Jul 19 03:45:16.707 VM: VM R2 created.
+Jul 19 03:45:16.707 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+Jul 19 03:45:16.707 HYPERVISOR: exec_cmd: c3745 get_mac_addr R2 
+Jul 19 03:45:16.708 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Jul 19 03:45:16.708 HYPERVISOR: exec_cmd: vm set_ios R2 /home/habeeb/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Jul 19 03:45:16.708 HYPERVISOR: exec_cmd: c3745 set_mac_addr R2 c402.157b.0000 
+Jul 19 03:45:16.708 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Jul 19 03:45:16.709 HYPERVISOR: exec_cmd: vm set_ram R2 256 
+Jul 19 03:45:16.709 HYPERVISOR: exec_cmd: vm get_status R2 
+Jul 19 03:45:16.709 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 NM-16ESW 
+Jul 19 03:45:16.981 HYPERVISOR: exec_cmd: nio create_udp udp-17861cd6-1fcb-481a-b48d-38d754170edd 10004 127.0.0.1 10005 
+Jul 19 03:45:17.189 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-17861cd6-1fcb-481a-b48d-38d754170edd 
+Jul 19 03:45:17.190 HYPERVISOR: exec_cmd: vm get_status R2 
+Jul 19 03:45:48.040 HYPERVISOR: exec_cmd: vm get_status R2 
+Jul 19 03:45:48.040 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R2 0 0 
+Jul 19 03:45:48.041 HYPERVISOR: exec_cmd: nio delete udp-17861cd6-1fcb-481a-b48d-38d754170edd 
+Jul 19 03:45:48.122 HYPERVISOR: exec_cmd: vm get_status R2 
+Jul 19 03:45:48.123 HYPERVISOR: exec_cmd: vm extract_config R2 
+Jul 19 03:45:48.123 HYPERVISOR: exec_cmd: vm delete R2 
+Jul 19 03:45:48.123 VM: VM R2 destroyed.
+Jul 19 03:45:48.123 HYPERVISOR: exec_cmd: hypervisor stop 
+Jul 19 03:45:48.243 HYPERVISOR: Stopped.
+Jul 19 03:45:48.243 GENERAL: reset done.

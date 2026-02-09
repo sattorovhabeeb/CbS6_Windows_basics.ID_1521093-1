@@ -1,0 +1,50 @@
+Jul 01 19:15:29.282 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jul 01 19:15:29.282 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 57561.
+Jul 01 19:15:29.289 HYPERVISOR: exec_cmd: hypervisor version 
+Jul 01 19:15:29.289 HYPERVISOR: exec_cmd: hypervisor working_dir /home/habeeb/GNS3/projects/tesk-1. static/project-files/dynamips 
+Jul 01 19:15:29.289 GENERAL: working_dir=/home/habeeb/GNS3/projects/tesk-1. static/project-files/dynamips
+Jul 01 19:15:29.290 HYPERVISOR: exec_cmd: hypervisor working_dir /home/habeeb/GNS3/projects/tesk-1. static/project-files/dynamips/ca010308-fa40-465e-8140-2c5eeb2e189d 
+Jul 01 19:15:29.290 GENERAL: working_dir=/home/habeeb/GNS3/projects/tesk-1. static/project-files/dynamips/ca010308-fa40-465e-8140-2c5eeb2e189d
+Jul 01 19:15:29.290 HYPERVISOR: exec_cmd: vm create R3 3 c3745 
+Jul 01 19:15:29.290 VM: VM R3 created.
+Jul 01 19:15:29.290 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5002 
+Jul 01 19:15:29.290 HYPERVISOR: exec_cmd: c3745 get_mac_addr R3 
+Jul 01 19:15:29.290 HYPERVISOR: exec_cmd: vm set_ios R3 /home/habeeb/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Jul 01 19:15:29.290 HYPERVISOR: exec_cmd: vm set_ram R3 256 
+Jul 01 19:15:29.291 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+Jul 01 19:15:29.291 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Jul 01 19:15:29.291 HYPERVISOR: exec_cmd: vm get_status R3 
+Jul 01 19:15:29.291 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 NM-16ESW 
+Jul 01 19:15:29.364 HYPERVISOR: exec_cmd: vm set_ios R3 /home/habeeb/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Jul 01 19:15:42.457 HYPERVISOR: exec_cmd: vm set_ios R3 /home/habeeb/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Jul 01 19:15:47.012 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Jul 01 19:15:47.013 HYPERVISOR: exec_cmd: vm set_ghost_file R3 /home/habeeb/GNS3/projects/tesk-1. static/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Jul 01 19:15:47.013 HYPERVISOR: exec_cmd: vm get_status R3 
+Jul 01 19:15:47.014 HYPERVISOR: exec_cmd: vm set_config R3 configs/i3_startup-config.cfg 
+Jul 01 19:15:47.014 HYPERVISOR: exec_cmd: vm start R3 
+Jul 01 19:16:00.440 HYPERVISOR: exec_cmd: nio create_udp udp-9894edaa-20a6-4e92-9a4b-7626045ae740 10010 127.0.0.1 10011 
+Jul 01 19:16:00.648 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 1 udp-9894edaa-20a6-4e92-9a4b-7626045ae740 
+Jul 01 19:16:00.648 HYPERVISOR: exec_cmd: vm get_status R3 
+Jul 01 19:16:00.648 HYPERVISOR: exec_cmd: vm slot_enable_nio R3 0 1 
+Jul 01 19:35:16.347 HYPERVISOR: exec_cmd: vm get_status R3 
+Jul 01 19:35:16.347 HYPERVISOR: exec_cmd: vm stop R3 
+Jul 01 19:35:16.390 VM: VM R3 shutdown.
+Jul 01 19:35:16.390 HYPERVISOR: exec_cmd: vm extract_config R3 
+Jul 01 19:35:39.939 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Jul 01 19:35:39.939 HYPERVISOR: exec_cmd: vm set_ghost_file R3 /home/habeeb/GNS3/projects/tesk-1. static/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Jul 01 19:35:39.939 HYPERVISOR: exec_cmd: vm get_status R3 
+Jul 01 19:35:39.950 HYPERVISOR: exec_cmd: vm set_config R3 configs/i3_startup-config.cfg 
+Jul 01 19:35:39.950 HYPERVISOR: exec_cmd: vm start R3 
+Jul 01 19:39:40.188 HYPERVISOR: exec_cmd: vm extract_config R3 
+Jul 01 19:39:40.226 HYPERVISOR: exec_cmd: vm extract_config R3 
+Jul 01 19:56:21.815 HYPERVISOR: exec_cmd: vm get_status R3 
+Jul 01 19:56:21.816 HYPERVISOR: exec_cmd: vm stop R3 
+Jul 01 19:56:21.910 VM: VM R3 shutdown.
+Jul 01 19:56:21.910 HYPERVISOR: exec_cmd: vm extract_config R3 
+Jul 01 19:56:22.305 HYPERVISOR: exec_cmd: vm get_status R3 
+Jul 01 19:56:22.306 HYPERVISOR: exec_cmd: vm extract_config R3 
+Jul 01 19:56:22.306 HYPERVISOR: exec_cmd: vm delete R3 
+Jul 01 19:56:22.306 VM: VM R3 destroyed.
+Jul 01 19:56:22.307 HYPERVISOR: exec_cmd: hypervisor stop 
+Jul 01 19:56:22.534 HYPERVISOR: Stopped.
+Jul 01 19:56:22.535 GENERAL: reset done.

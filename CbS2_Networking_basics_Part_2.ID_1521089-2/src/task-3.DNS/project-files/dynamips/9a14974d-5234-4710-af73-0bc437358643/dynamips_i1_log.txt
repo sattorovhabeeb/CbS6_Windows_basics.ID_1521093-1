@@ -1,0 +1,54 @@
+Jul 10 11:50:57.326 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jul 10 11:50:57.326 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 40419.
+Jul 10 11:50:57.331 HYPERVISOR: exec_cmd: hypervisor version 
+Jul 10 11:50:57.331 HYPERVISOR: exec_cmd: hypervisor working_dir /home/habeeb/GNS3/projects/TEST/project-files/dynamips 
+Jul 10 11:50:57.331 GENERAL: working_dir=/home/habeeb/GNS3/projects/TEST/project-files/dynamips
+Jul 10 11:50:57.331 HYPERVISOR: exec_cmd: hypervisor working_dir /home/habeeb/GNS3/projects/TEST/project-files/dynamips/97330ca1-c4b9-4895-b066-c2d1e4e8ba5b 
+Jul 10 11:50:57.331 GENERAL: working_dir=/home/habeeb/GNS3/projects/TEST/project-files/dynamips/97330ca1-c4b9-4895-b066-c2d1e4e8ba5b
+Jul 10 11:50:57.331 HYPERVISOR: exec_cmd: vm create R1 1 c3745 
+Jul 10 11:50:57.332 VM: VM R1 created.
+Jul 10 11:50:57.333 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Jul 10 11:50:57.333 HYPERVISOR: exec_cmd: c3745 get_mac_addr R1 
+Jul 10 11:50:57.333 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Jul 10 11:50:57.333 HYPERVISOR: exec_cmd: vm set_ios R1 /home/habeeb/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Jul 10 11:50:57.333 HYPERVISOR: exec_cmd: c3745 set_mac_addr R1 c401.5223.0000 
+Jul 10 11:50:57.333 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Jul 10 11:50:57.334 HYPERVISOR: exec_cmd: vm set_ram R1 256 
+Jul 10 11:50:57.334 HYPERVISOR: exec_cmd: vm get_status R1 
+Jul 10 11:50:57.334 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 NM-16ESW 
+Jul 10 11:50:57.384 HYPERVISOR: exec_cmd: nio create_udp udp-c33ed675-a985-465d-902a-372f6b9037f4 10002 127.0.0.1 10003 
+Jul 10 11:50:57.591 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-c33ed675-a985-465d-902a-372f6b9037f4 
+Jul 10 11:50:57.591 HYPERVISOR: exec_cmd: vm get_status R1 
+Jul 10 11:51:02.898 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Jul 10 11:51:02.899 VM: VM Ghost created.
+Jul 10 11:51:02.899 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/habeeb/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Jul 10 11:51:02.900 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jul 10 11:51:02.900 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/habeeb/GNS3/projects/TEST/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Jul 10 11:51:02.900 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Jul 10 11:51:02.901 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jul 10 11:51:02.902 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Jul 10 11:51:02.902 HYPERVISOR: exec_cmd: vm start Ghost 
+Jul 10 11:51:03.283 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jul 10 11:51:03.283 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jul 10 11:51:03.338 VM: VM Ghost shutdown.
+Jul 10 11:51:03.339 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Jul 10 11:51:03.340 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jul 10 11:51:03.340 VM: VM Ghost destroyed.
+Jul 10 11:51:03.341 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Jul 10 11:51:03.341 HYPERVISOR: exec_cmd: vm set_ghost_file R1 /home/habeeb/GNS3/projects/TEST/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Jul 10 11:51:03.342 HYPERVISOR: exec_cmd: vm get_status R1 
+Jul 10 11:51:03.342 HYPERVISOR: exec_cmd: vm set_config R1 configs/i1_startup-config.cfg 
+Jul 10 11:51:03.342 HYPERVISOR: exec_cmd: vm start R1 
+Jul 10 11:53:08.769 HYPERVISOR: exec_cmd: vm get_status R1 
+Jul 10 11:53:08.770 HYPERVISOR: exec_cmd: vm slot_disable_nio R1 0 0 
+Jul 10 11:53:08.772 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R1 0 0 
+Jul 10 11:53:08.773 HYPERVISOR: exec_cmd: nio delete udp-c33ed675-a985-465d-902a-372f6b9037f4 
+Jul 10 11:53:31.638 HYPERVISOR: exec_cmd: vm get_status R1 
+Jul 10 11:53:31.638 HYPERVISOR: exec_cmd: vm stop R1 
+Jul 10 11:53:31.708 VM: VM R1 shutdown.
+Jul 10 11:53:31.708 HYPERVISOR: exec_cmd: vm extract_config R1 
+Jul 10 11:53:31.709 HYPERVISOR: exec_cmd: vm delete R1 
+Jul 10 11:53:31.709 VM: VM R1 destroyed.
+Jul 10 11:53:31.746 HYPERVISOR: exec_cmd: hypervisor stop 
+Jul 10 11:53:31.980 HYPERVISOR: Stopped.
+Jul 10 11:53:31.980 GENERAL: reset done.

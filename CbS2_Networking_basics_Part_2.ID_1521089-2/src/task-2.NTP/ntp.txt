@@ -1,0 +1,6 @@
+NTP всегда использывает протокол 4-го уровня: UDP
+Source port: 123
+Destination port: 123
+
+Transmit Timestamp: Jul  7,
+ 2025 00:39:35.247922157 UTC

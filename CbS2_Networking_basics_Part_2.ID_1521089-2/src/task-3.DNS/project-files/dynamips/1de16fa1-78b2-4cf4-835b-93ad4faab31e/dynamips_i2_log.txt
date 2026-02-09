@@ -1,0 +1,41 @@
+Jul 12 11:35:27.369 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jul 12 11:35:27.369 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 36293.
+Jul 12 11:35:27.377 HYPERVISOR: exec_cmd: hypervisor version 
+Jul 12 11:35:27.377 HYPERVISOR: exec_cmd: hypervisor working_dir /home/habeeb/CbS2_Networking_basics_Part_2.ID_1521089-1/src/task-3.DNS/project-files/dynamips 
+Jul 12 11:35:27.377 GENERAL: working_dir=/home/habeeb/CbS2_Networking_basics_Part_2.ID_1521089-1/src/task-3.DNS/project-files/dynamips
+Jul 12 11:35:27.377 HYPERVISOR: exec_cmd: hypervisor working_dir /home/habeeb/CbS2_Networking_basics_Part_2.ID_1521089-1/src/task-3.DNS/project-files/dynamips/1de16fa1-78b2-4cf4-835b-93ad4faab31e 
+Jul 12 11:35:27.377 GENERAL: working_dir=/home/habeeb/CbS2_Networking_basics_Part_2.ID_1521089-1/src/task-3.DNS/project-files/dynamips/1de16fa1-78b2-4cf4-835b-93ad4faab31e
+Jul 12 11:35:27.377 HYPERVISOR: exec_cmd: vm create R2 2 c3745 
+Jul 12 11:35:27.378 VM: VM R2 created.
+Jul 12 11:35:27.378 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5000 
+Jul 12 11:35:27.378 HYPERVISOR: exec_cmd: c3745 get_mac_addr R2 
+Jul 12 11:35:27.378 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Jul 12 11:35:27.378 HYPERVISOR: exec_cmd: vm set_ios R2 /home/habeeb/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Jul 12 11:35:27.378 HYPERVISOR: exec_cmd: c3745 set_mac_addr R2 c402.316a.0000 
+Jul 12 11:35:27.379 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Jul 12 11:35:27.379 HYPERVISOR: exec_cmd: vm set_ram R2 256 
+Jul 12 11:35:27.379 HYPERVISOR: exec_cmd: vm get_status R2 
+Jul 12 11:35:27.379 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 NM-16ESW 
+Jul 12 11:35:27.636 HYPERVISOR: exec_cmd: nio create_udp udp-e889b4ac-f34e-458f-8f6a-93c70b0a481e 10004 127.0.0.1 10005 
+Jul 12 11:35:27.845 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-e889b4ac-f34e-458f-8f6a-93c70b0a481e 
+Jul 12 11:35:27.845 HYPERVISOR: exec_cmd: vm get_status R2 
+Jul 12 11:36:32.772 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Jul 12 11:36:32.772 VM: VM Ghost created.
+Jul 12 11:36:32.773 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/habeeb/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Jul 12 11:36:32.774 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jul 12 11:36:32.774 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/habeeb/CbS2_Networking_basics_Part_2.ID_1521089-1/src/task-3.DNS/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Jul 12 11:36:32.774 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Jul 12 11:36:32.775 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jul 12 11:36:32.811 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Jul 12 11:36:32.811 HYPERVISOR: exec_cmd: vm start Ghost 
+Jul 12 11:36:33.141 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jul 12 11:36:33.142 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jul 12 11:36:33.246 VM: VM Ghost shutdown.
+Jul 12 11:36:33.247 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Jul 12 11:36:33.248 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jul 12 11:36:33.248 VM: VM Ghost destroyed.
+Jul 12 11:36:33.249 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Jul 12 11:36:33.250 HYPERVISOR: exec_cmd: vm set_ghost_file R2 /home/habeeb/CbS2_Networking_basics_Part_2.ID_1521089-1/src/task-3.DNS/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Jul 12 11:36:33.250 HYPERVISOR: exec_cmd: vm get_status R2 
+Jul 12 11:36:33.251 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+Jul 12 11:36:33.251 HYPERVISOR: exec_cmd: vm start R2 

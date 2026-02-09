@@ -1,0 +1,44 @@
+Jul 01 19:15:23.285 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jul 01 19:15:23.285 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 37303.
+Jul 01 19:15:23.295 HYPERVISOR: exec_cmd: hypervisor version 
+Jul 01 19:15:23.295 HYPERVISOR: exec_cmd: hypervisor working_dir /home/habeeb/GNS3/projects/tesk-1. static/project-files/dynamips 
+Jul 01 19:15:23.295 GENERAL: working_dir=/home/habeeb/GNS3/projects/tesk-1. static/project-files/dynamips
+Jul 01 19:15:23.295 HYPERVISOR: exec_cmd: hypervisor working_dir /home/habeeb/GNS3/projects/tesk-1. static/project-files/dynamips/19c6430e-3828-4cd1-8693-7d81dfa93e15 
+Jul 01 19:15:23.295 GENERAL: working_dir=/home/habeeb/GNS3/projects/tesk-1. static/project-files/dynamips/19c6430e-3828-4cd1-8693-7d81dfa93e15
+Jul 01 19:15:23.295 HYPERVISOR: exec_cmd: vm create R1 1 c3745 
+Jul 01 19:15:23.295 VM: VM R1 created.
+Jul 01 19:15:23.296 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Jul 01 19:15:23.296 HYPERVISOR: exec_cmd: c3745 get_mac_addr R1 
+Jul 01 19:15:23.296 HYPERVISOR: exec_cmd: vm set_ios R1 /home/habeeb/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Jul 01 19:15:23.296 HYPERVISOR: exec_cmd: vm set_ram R1 256 
+Jul 01 19:15:23.296 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Jul 01 19:15:23.296 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Jul 01 19:15:23.296 HYPERVISOR: exec_cmd: vm get_status R1 
+Jul 01 19:15:23.297 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 NM-16ESW 
+Jul 01 19:15:23.347 HYPERVISOR: exec_cmd: vm set_ios R1 /home/habeeb/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Jul 01 19:15:34.780 HYPERVISOR: exec_cmd: vm set_ios R1 /home/habeeb/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Jul 01 19:15:47.014 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Jul 01 19:15:47.014 HYPERVISOR: exec_cmd: vm set_ghost_file R1 /home/habeeb/GNS3/projects/tesk-1. static/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Jul 01 19:15:47.015 HYPERVISOR: exec_cmd: vm get_status R1 
+Jul 01 19:15:47.016 HYPERVISOR: exec_cmd: vm set_config R1 configs/i1_startup-config.cfg 
+Jul 01 19:15:47.016 HYPERVISOR: exec_cmd: vm start R1 
+Jul 01 19:15:54.141 HYPERVISOR: exec_cmd: nio create_udp udp-04b763a7-5b1b-4f93-9ec8-c72c5b1646ed 10002 127.0.0.1 10003 
+Jul 01 19:15:54.352 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-04b763a7-5b1b-4f93-9ec8-c72c5b1646ed 
+Jul 01 19:15:54.353 HYPERVISOR: exec_cmd: vm get_status R1 
+Jul 01 19:15:54.353 HYPERVISOR: exec_cmd: vm slot_enable_nio R1 0 0 
+Jul 01 19:24:47.270 HYPERVISOR: exec_cmd: vm extract_config R1 
+Jul 01 19:24:47.281 HYPERVISOR: exec_cmd: vm extract_config R1 
+Jul 01 19:40:04.611 HYPERVISOR: exec_cmd: nio bind_filter udp-04b763a7-5b1b-4f93-9ec8-c72c5b1646ed 2 capture 
+Jul 01 19:40:04.612 HYPERVISOR: exec_cmd: nio setup_filter udp-04b763a7-5b1b-4f93-9ec8-c72c5b1646ed 2 en10mb /home/habeeb/GNS3/projects/tesk-1. static/project-files/captures/R1_FastEthernet00_to_R2_FastEthernet00.pcap 
+Jul 01 19:56:21.816 HYPERVISOR: exec_cmd: vm get_status R1 
+Jul 01 19:56:21.816 HYPERVISOR: exec_cmd: vm stop R1 
+Jul 01 19:56:21.870 VM: VM R1 shutdown.
+Jul 01 19:56:21.871 HYPERVISOR: exec_cmd: vm extract_config R1 
+Jul 01 19:56:21.873 HYPERVISOR: exec_cmd: nio unbind_filter udp-04b763a7-5b1b-4f93-9ec8-c72c5b1646ed 2 
+Jul 01 19:56:22.404 HYPERVISOR: exec_cmd: vm get_status R1 
+Jul 01 19:56:22.405 HYPERVISOR: exec_cmd: vm extract_config R1 
+Jul 01 19:56:22.405 HYPERVISOR: exec_cmd: vm delete R1 
+Jul 01 19:56:22.405 VM: VM R1 destroyed.
+Jul 01 19:56:22.406 HYPERVISOR: exec_cmd: hypervisor stop 
+Jul 01 19:56:22.515 HYPERVISOR: Stopped.
+Jul 01 19:56:22.515 GENERAL: reset done.
