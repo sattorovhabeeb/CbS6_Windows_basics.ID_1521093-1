@@ -1,0 +1,45 @@
+C3745 'Ghost': generic_nvram_extract_config: Unknown error -61605
+Cisco Router Simulation Platform (version 0.2.23-amd64/Linux stable)
+Copyright (c) 2005-2011 Christophe Fillot.
+Build date: Jan  2 2023 12:00:00
+
+Log file: writing to dynamips_i1_log.txt
+Console binding address set to localhost
+ILT: loaded table "mips64j" from cache.
+ILT: loaded table "mips64e" from cache.
+ILT: loaded table "ppc32j" from cache.
+ILT: loaded table "ppc32e" from cache.
+Hypervisor TCP control server started (IP 127.0.0.1 port 58401).
+CPU0: carved JIT exec zone of 64 Mb into 2048 pages of 32 Kb.
+NVRAM is empty, setting config register to 0x2142
+C3745 instance 'Ghost' (id 0):
+  VM Status  : 0
+  RAM size   : 256 Mb
+  NVRAM size : 304 Kb
+  IOS image  : /home/habeeb/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image
+
+Loading ELF file '/home/habeeb/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image'...
+ELF entry point: 0x80008000
+
+C3745 'Ghost': starting simulation (CPU0 PC=0xffffffffbfc00000), JIT enabled.
+
+C3745 'Ghost': stopping simulation.
+CPU0: carved JIT exec zone of 64 Mb into 2048 pages of 32 Kb.
+NVRAM is empty, setting config register to 0x2142
+C3745 instance 'SW2' (id 2):
+  VM Status  : 0
+  RAM size   : 256 Mb
+  NVRAM size : 256 Kb
+  IOS image  : /home/habeeb/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image
+
+Loading ELF file '/home/habeeb/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image'...
+ELF loading skipped, using a ghost RAM file.
+ELF entry point: 0x80008000
+
+C3745 'SW2': starting simulation (CPU0 PC=0xffffffffbfc00000), JIT enabled.
+
+C3745 'SW2': stopping simulation.
+Hypervisor: closing control sockets.
+Hypervisor: closing remote client connections.
+Shutdown in progress...
+Shutdown completed.

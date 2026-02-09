@@ -1,0 +1,28 @@
+Jul 30 18:22:51.402 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jul 30 18:22:51.402 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 37671.
+Jul 30 18:22:51.409 HYPERVISOR: exec_cmd: hypervisor version 
+Jul 30 18:22:51.410 HYPERVISOR: exec_cmd: hypervisor working_dir /home/habeeb/GNS3/projects/ospf/project-files/dynamips 
+Jul 30 18:22:51.410 GENERAL: working_dir=/home/habeeb/GNS3/projects/ospf/project-files/dynamips
+Jul 30 18:22:51.410 HYPERVISOR: exec_cmd: hypervisor working_dir /home/habeeb/GNS3/projects/ospf/project-files/dynamips/65a215ca-1e91-4c56-b4cc-fbf44d14dc65 
+Jul 30 18:22:51.410 GENERAL: working_dir=/home/habeeb/GNS3/projects/ospf/project-files/dynamips/65a215ca-1e91-4c56-b4cc-fbf44d14dc65
+Jul 30 18:22:51.410 HYPERVISOR: exec_cmd: vm create R3 3 c3745 
+Jul 30 18:22:51.410 VM: VM R3 created.
+Jul 30 18:22:51.411 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5002 
+Jul 30 18:22:51.411 HYPERVISOR: exec_cmd: c3745 get_mac_addr R3 
+Jul 30 18:22:51.411 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Jul 30 18:22:51.411 HYPERVISOR: exec_cmd: vm get_status R3 
+Jul 30 18:22:51.412 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x6026e7b8 
+Jul 30 18:22:51.412 HYPERVISOR: exec_cmd: vm set_ios R3 /home/habeeb/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Jul 30 18:22:51.412 HYPERVISOR: exec_cmd: c3745 set_mac_addr R3 c403.2a0f.0000 
+Jul 30 18:22:51.413 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+Jul 30 18:22:51.413 HYPERVISOR: exec_cmd: vm set_ram R3 256 
+Jul 30 18:22:51.413 HYPERVISOR: exec_cmd: vm get_status R3 
+Jul 30 18:22:51.413 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 NM-16ESW 
+Jul 30 18:22:51.689 HYPERVISOR: exec_cmd: nio create_udp udp-a9c6fbe5-a007-4d21-8f4f-7ab99fcb8e1b 10004 127.0.0.1 10005 
+Jul 30 18:22:51.899 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 1 udp-a9c6fbe5-a007-4d21-8f4f-7ab99fcb8e1b 
+Jul 30 18:22:51.899 HYPERVISOR: exec_cmd: vm get_status R3 
+Jul 30 18:23:04.160 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Jul 30 18:23:04.160 HYPERVISOR: exec_cmd: vm set_ghost_file R3 /home/habeeb/GNS3/projects/ospf/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Jul 30 18:23:04.161 HYPERVISOR: exec_cmd: vm get_status R3 
+Jul 30 18:23:04.161 HYPERVISOR: exec_cmd: vm set_config R3 configs/i3_startup-config.cfg 
+Jul 30 18:23:04.162 HYPERVISOR: exec_cmd: vm start R3 

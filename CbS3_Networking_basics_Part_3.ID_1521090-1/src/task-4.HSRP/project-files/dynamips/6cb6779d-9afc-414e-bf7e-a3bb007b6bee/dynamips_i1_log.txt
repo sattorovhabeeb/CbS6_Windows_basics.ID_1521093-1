@@ -1,0 +1,67 @@
+Aug 08 05:17:02.919 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Aug 08 05:17:02.919 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 35043.
+Aug 08 05:17:02.921 HYPERVISOR: exec_cmd: hypervisor version 
+Aug 08 05:17:02.922 HYPERVISOR: exec_cmd: hypervisor working_dir /home/habeeb/GNS3/projects/HSRP/project-files/dynamips 
+Aug 08 05:17:02.922 GENERAL: working_dir=/home/habeeb/GNS3/projects/HSRP/project-files/dynamips
+Aug 08 05:17:02.922 HYPERVISOR: exec_cmd: hypervisor working_dir /home/habeeb/GNS3/projects/HSRP/project-files/dynamips/49ded32e-877b-4f9b-985b-0a48bef9b196 
+Aug 08 05:17:02.922 GENERAL: working_dir=/home/habeeb/GNS3/projects/HSRP/project-files/dynamips/49ded32e-877b-4f9b-985b-0a48bef9b196
+Aug 08 05:17:02.922 HYPERVISOR: exec_cmd: vm create R1 1 c3745 
+Aug 08 05:17:02.922 VM: VM R1 created.
+Aug 08 05:17:02.922 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Aug 08 05:17:02.922 HYPERVISOR: exec_cmd: c3745 get_mac_addr R1 
+Aug 08 05:17:02.922 HYPERVISOR: exec_cmd: vm set_ios R1 /home/habeeb/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Aug 08 05:17:02.923 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 08 05:17:02.923 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60aa72bc 
+Aug 08 05:17:02.923 HYPERVISOR: exec_cmd: vm set_ram R1 256 
+Aug 08 05:17:02.923 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Aug 08 05:17:02.923 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Aug 08 05:17:02.923 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 08 05:17:02.923 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 NM-16ESW 
+Aug 08 05:17:02.976 HYPERVISOR: exec_cmd: vm set_ios R1 /home/habeeb/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Aug 08 05:27:24.832 HYPERVISOR: exec_cmd: vm set_ios R1 /home/habeeb/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Aug 08 05:27:57.725 HYPERVISOR: exec_cmd: vm set_ios R1 /home/habeeb/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Aug 08 05:28:01.232 HYPERVISOR: exec_cmd: vm set_ios R1 /home/habeeb/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Aug 08 05:28:04.597 HYPERVISOR: exec_cmd: vm set_ios R1 /home/habeeb/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Aug 08 05:28:30.327 HYPERVISOR: exec_cmd: vm set_ios R1 /home/habeeb/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Aug 08 05:28:51.830 HYPERVISOR: exec_cmd: nio create_udp udp-8f2a6d5c-5016-4c12-a7dc-9d7446148616 10002 127.0.0.1 10003 
+Aug 08 05:28:52.037 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-8f2a6d5c-5016-4c12-a7dc-9d7446148616 
+Aug 08 05:28:52.038 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 08 05:29:55.755 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 08 05:29:55.755 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R1 0 0 
+Aug 08 05:29:55.758 HYPERVISOR: exec_cmd: nio delete udp-8f2a6d5c-5016-4c12-a7dc-9d7446148616 
+Aug 08 05:31:40.747 HYPERVISOR: exec_cmd: nio create_udp udp-78c04c1b-db6d-4cbe-8857-1afab470db1c 10002 127.0.0.1 10003 
+Aug 08 05:31:40.748 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-78c04c1b-db6d-4cbe-8857-1afab470db1c 
+Aug 08 05:31:40.748 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 08 05:50:28.097 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 08 05:50:28.097 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R1 0 0 
+Aug 08 05:50:28.098 HYPERVISOR: exec_cmd: nio delete udp-78c04c1b-db6d-4cbe-8857-1afab470db1c 
+Aug 08 05:50:38.418 HYPERVISOR: exec_cmd: nio create_udp udp-ca6c8759-f89a-45e9-93fe-c5e93f6eff02 10002 127.0.0.1 10003 
+Aug 08 05:50:38.419 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-ca6c8759-f89a-45e9-93fe-c5e93f6eff02 
+Aug 08 05:50:38.419 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 08 06:00:49.559 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 08 06:00:49.560 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R1 0 0 
+Aug 08 06:00:49.561 HYPERVISOR: exec_cmd: nio delete udp-ca6c8759-f89a-45e9-93fe-c5e93f6eff02 
+Aug 08 06:01:14.957 HYPERVISOR: exec_cmd: nio create_udp udp-7b608d72-6d74-4305-a1dd-3b6981440f1f 10002 127.0.0.1 10003 
+Aug 08 06:01:14.958 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-7b608d72-6d74-4305-a1dd-3b6981440f1f 
+Aug 08 06:01:14.958 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 08 06:01:50.286 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 08 06:01:50.286 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R1 0 0 
+Aug 08 06:01:50.287 HYPERVISOR: exec_cmd: nio delete udp-7b608d72-6d74-4305-a1dd-3b6981440f1f 
+Aug 08 06:01:58.124 HYPERVISOR: exec_cmd: nio create_udp udp-e3a565ea-6ef2-4e82-bf24-fef9a25db64b 10002 127.0.0.1 10003 
+Aug 08 06:01:58.124 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 1 udp-e3a565ea-6ef2-4e82-bf24-fef9a25db64b 
+Aug 08 06:01:58.125 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 08 06:02:05.500 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 08 06:02:05.500 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R1 1 1 
+Aug 08 06:02:05.501 HYPERVISOR: exec_cmd: nio delete udp-e3a565ea-6ef2-4e82-bf24-fef9a25db64b 
+Aug 08 06:02:13.570 HYPERVISOR: exec_cmd: nio create_udp udp-164ec6ca-2390-4a46-afea-37ad0684d589 10002 127.0.0.1 10003 
+Aug 08 06:02:13.570 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-164ec6ca-2390-4a46-afea-37ad0684d589 
+Aug 08 06:02:13.571 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 08 06:06:30.247 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Aug 08 06:06:30.248 HYPERVISOR: exec_cmd: vm set_ghost_file R1 /home/habeeb/GNS3/projects/HSRP/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Aug 08 06:06:30.248 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 08 06:06:30.248 HYPERVISOR: exec_cmd: vm set_config R1 configs/i1_startup-config.cfg 
+Aug 08 06:06:30.249 HYPERVISOR: exec_cmd: vm start R1 
+Aug 08 06:24:30.556 HYPERVISOR: exec_cmd: vm extract_config R1 
+Aug 08 06:24:30.568 HYPERVISOR: exec_cmd: vm extract_config R1 
+Aug 08 07:51:58.216 HYPERVISOR: exec_cmd: vm extract_config R1 
+Aug 08 07:51:58.228 HYPERVISOR: exec_cmd: vm extract_config R1 

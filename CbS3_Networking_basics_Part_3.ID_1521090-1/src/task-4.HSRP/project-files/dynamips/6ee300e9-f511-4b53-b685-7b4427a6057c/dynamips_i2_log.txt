@@ -1,0 +1,61 @@
+Aug 08 05:17:05.210 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Aug 08 05:17:05.210 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 60287.
+Aug 08 05:17:05.217 HYPERVISOR: exec_cmd: hypervisor version 
+Aug 08 05:17:05.217 HYPERVISOR: exec_cmd: hypervisor working_dir /home/habeeb/GNS3/projects/HSRP/project-files/dynamips 
+Aug 08 05:17:05.217 GENERAL: working_dir=/home/habeeb/GNS3/projects/HSRP/project-files/dynamips
+Aug 08 05:17:05.217 HYPERVISOR: exec_cmd: hypervisor working_dir /home/habeeb/GNS3/projects/HSRP/project-files/dynamips/c4d494d1-9d4a-4234-9a41-a17ea836dfbe 
+Aug 08 05:17:05.217 GENERAL: working_dir=/home/habeeb/GNS3/projects/HSRP/project-files/dynamips/c4d494d1-9d4a-4234-9a41-a17ea836dfbe
+Aug 08 05:17:05.217 HYPERVISOR: exec_cmd: vm create R2 2 c3745 
+Aug 08 05:17:05.217 VM: VM R2 created.
+Aug 08 05:17:05.218 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+Aug 08 05:17:05.218 HYPERVISOR: exec_cmd: c3745 get_mac_addr R2 
+Aug 08 05:17:05.218 HYPERVISOR: exec_cmd: vm set_ios R2 /home/habeeb/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Aug 08 05:17:05.218 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 08 05:17:05.218 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60aa72bc 
+Aug 08 05:17:05.219 HYPERVISOR: exec_cmd: vm set_ram R2 256 
+Aug 08 05:17:05.219 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Aug 08 05:17:05.219 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Aug 08 05:17:05.219 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 08 05:17:05.220 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 NM-16ESW 
+Aug 08 05:17:05.288 HYPERVISOR: exec_cmd: vm set_ios R2 /home/habeeb/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Aug 08 05:27:28.262 HYPERVISOR: exec_cmd: vm set_ios R2 /home/habeeb/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Aug 08 05:28:34.490 HYPERVISOR: exec_cmd: vm set_ios R2 /home/habeeb/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Aug 08 05:49:59.119 HYPERVISOR: exec_cmd: nio create_udp udp-6ed567d7-919a-4b49-b710-a44e01eef711 10006 127.0.0.1 10007 
+Aug 08 05:49:59.326 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-6ed567d7-919a-4b49-b710-a44e01eef711 
+Aug 08 05:49:59.327 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 08 05:50:32.306 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 08 05:50:32.306 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R2 0 0 
+Aug 08 05:50:32.307 HYPERVISOR: exec_cmd: nio delete udp-6ed567d7-919a-4b49-b710-a44e01eef711 
+Aug 08 05:50:49.284 HYPERVISOR: exec_cmd: nio create_udp udp-0e92d1ac-8171-473b-b5d4-831004b8b310 10006 127.0.0.1 10007 
+Aug 08 05:50:49.285 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-0e92d1ac-8171-473b-b5d4-831004b8b310 
+Aug 08 05:50:49.285 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 08 06:00:49.627 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 08 06:00:49.627 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R2 0 0 
+Aug 08 06:00:49.628 HYPERVISOR: exec_cmd: nio delete udp-0e92d1ac-8171-473b-b5d4-831004b8b310 
+Aug 08 06:01:40.090 HYPERVISOR: exec_cmd: nio create_udp udp-ba52bdb9-4e0a-4a8e-b4a0-6af1dbec99b2 10008 127.0.0.1 10009 
+Aug 08 06:01:40.090 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-ba52bdb9-4e0a-4a8e-b4a0-6af1dbec99b2 
+Aug 08 06:01:40.091 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 08 06:06:29.785 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Aug 08 06:06:29.785 VM: VM Ghost created.
+Aug 08 06:06:29.786 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/habeeb/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Aug 08 06:06:29.787 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Aug 08 06:06:29.793 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/habeeb/GNS3/projects/HSRP/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Aug 08 06:06:29.794 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Aug 08 06:06:29.795 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Aug 08 06:06:29.795 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Aug 08 06:06:29.795 HYPERVISOR: exec_cmd: vm start Ghost 
+Aug 08 06:06:30.089 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Aug 08 06:06:30.090 HYPERVISOR: exec_cmd: vm stop Ghost 
+Aug 08 06:06:30.244 VM: VM Ghost shutdown.
+Aug 08 06:06:30.245 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Aug 08 06:06:30.245 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Aug 08 06:06:30.245 VM: VM Ghost destroyed.
+Aug 08 06:06:30.246 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Aug 08 06:06:30.247 HYPERVISOR: exec_cmd: vm set_ghost_file R2 /home/habeeb/GNS3/projects/HSRP/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Aug 08 06:06:30.247 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 08 06:06:30.247 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+Aug 08 06:06:30.248 HYPERVISOR: exec_cmd: vm start R2 
+Aug 08 07:28:57.424 HYPERVISOR: exec_cmd: vm extract_config R2 
+Aug 08 07:28:57.426 HYPERVISOR: exec_cmd: vm extract_config R2 
+Aug 08 07:52:28.215 HYPERVISOR: exec_cmd: vm extract_config R2 
+Aug 08 07:52:28.226 HYPERVISOR: exec_cmd: vm extract_config R2 
