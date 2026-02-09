@@ -1,0 +1,18 @@
+1. IP jertvy iniciruyashaya 'reverse shell':
+   192.168.1.100
+
+2. IP atakueshego na kotorogo na kotorogo byl perebroshen 'reverse shell:
+   192.168.1.101
+
+3. Protocol s pomoshyu kotoryi byl osushestvlyon 'reverse shell':
+   TCP
+
+4. Peredannye komandy:
+   uname -a
+     Result of: uname -a
+   whoami
+     Result of: whoami
+   ls -la / etc
+     Result of: ls -la /etc
+   cat /etc /passwd
+     Result of: cat / etc/passwd

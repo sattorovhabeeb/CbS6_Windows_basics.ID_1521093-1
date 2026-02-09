@@ -1,0 +1,12 @@
+1. Na etom dampe trafika mojno videt' SMB soedinenie mejdu dvumya uzlami seti. Dalee s zashifrovonnimi dannymi.
+  Vypolnyaetsya procedura soglasovaniya protokola (Negotiate Protocol)
+  Vse posleduyushie pakety pomecheny kak "Encrypted SMB3", chto ukazyvaet na ispol'zovanie shifrovaniya.
+
+2. Dlya soedinenie uzlov ispol'zovalos' SMBv3- dealekta.
+
+3. Session id: 0x0000281cac000069
+
+4. [Account: administrator]
+
+5. Source MAC: 52:55:00:d1:44:45  (klient)
+   Destin MAC: 52:54:00:07:03:2d  (server)

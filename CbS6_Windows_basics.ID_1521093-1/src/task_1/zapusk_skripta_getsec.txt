@@ -1,7 +1,0 @@
-1. PowerSell ot imeni adm.
-
-2. pereyti v derectoriyu fayla:
-   cd $env:USERPROFILE\Desktop
-
-3. zapusk:
-   .\get_sec_pol.ps1
