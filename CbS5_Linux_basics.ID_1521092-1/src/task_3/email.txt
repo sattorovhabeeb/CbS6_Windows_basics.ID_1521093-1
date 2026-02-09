@@ -1,0 +1,63 @@
+Cron <root@kali-hab> /usr/sbin/logwatch
+
+habeebsatt@yandex.ru
+habeebsatt@yandex.ru
+20 сентября в 21:41
+Я
+Язык письма — Авто. Перевести на Русский?
+ 
+ ################### Logwatch 7.12 (01/22/25) ####################
+        Processing Initiated: Sat Sep 20 23:41:02 2025
+        Date Range Processed: yesterday
+                              ( 2025-Sep-19 )
+                              Period is day.
+        Detail Level of Output: 10
+        Type of Output/Format: stdout / text
+        Logfiles for Host: kali-hab
+ ##################################################################
+ 
+ --------------------- Disk Space Begin ------------------------
+
+ Filesystem Size Used Avail Use% Mounted on
+ /dev/nvme0n1p2 226G 20G 194G 10% /
+ efivarfs 192K 141K 47K 76% /sys/firmware/efi/efivars
+ /dev/nvme0n1p1 975M 156K 974M 1% /boot/efi
+ 
+ 
+ ---------------------- Disk Space End -------------------------
+
+ 
+ --------------------- lm_sensors output Begin ------------------------
+
+ coretemp-isa-0000
+ Adapter: ISA adapter
+ Package id 0: +58.0 C (high = +100.0 C, crit = +100.0 C)
+ Core 0: +56.0 C (high = +100.0 C, crit = +100.0 C)
+ Core 1: +58.0 C (high = +100.0 C, crit = +100.0 C)
+ 
+ nvme-pci-e100
+ Adapter: PCI adapter
+ Composite: +40.9 C (low = -5.2 C, high = +79.8 C)
+                        (crit = +84.8 C)
+ 
+ acpitz-acpi-0
+ Adapter: ACPI interface
+ temp1: +27.8 C
+ temp2: +10.0 C
+ 
+ hp-isa-0000
+ Adapter: ISA adapter
+ fan1: 0 RPM
+ fan2: 0 RPM
+ pwm1: N/A
+ 
+ BAT1-acpi-0
+ Adapter: ACPI interface
+ in0: 11.10 V
+ power1: N/A
+ 
+ 
+ ---------------------- lm_sensors output End -------------------------
+
+ 
+ ###################### Logwatch End #########################

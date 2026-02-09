@@ -1,0 +1,4 @@
+Chain INPUT (policy ACCEPT)
+num  target     prot opt source               destination         
+1    ACCEPT     6    --  127.0.0.1            0.0.0.0/0            tcp dpt:80
+2    DROP       6    --  0.0.0.0/0            0.0.0.0/0            tcp dpt:80

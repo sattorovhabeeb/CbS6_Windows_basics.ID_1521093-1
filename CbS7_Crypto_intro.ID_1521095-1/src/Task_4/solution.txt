@@ -1,0 +1,4 @@
+Iznachal'not znachenie peremennogo flag:
+  S21{w45_17_cryp70_0r_wh47}
+  
+  Tak kak XOR proces obratimyi, dlya rasshifrovki bylo ispol'zovano imenno etot sposob.

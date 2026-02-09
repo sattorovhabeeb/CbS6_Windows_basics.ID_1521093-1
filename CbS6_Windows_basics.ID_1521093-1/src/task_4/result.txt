@@ -1,0 +1,9 @@
+﻿
+Name            Enabled Protocol LocalPort RemotePort Action Profile
+----            ------- -------- --------- ---------- ------ -------
+Block_http_conn    True TCP      80        Any         Block     Any
+Allow_rdp_conn     True TCP      3389      Any         Allow     Any
+Block_ping_conn    True ICMPv4   Any       Any         Block     Any
+Block_ftp_conn     True TCP      21        Any         Block     Any
+
+

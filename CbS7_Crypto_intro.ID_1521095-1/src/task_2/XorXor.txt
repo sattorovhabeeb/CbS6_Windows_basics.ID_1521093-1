@@ -1,0 +1,17 @@
+1. Esli XOR na 2 "Privet, mir!" 
+
+   Resultat: 0.
+   
+   
+2. Primer dvux binarnyx strok 4 simvola...
+
+         Stroka A: 1010
+         Stroka B: 0000
+   Otvet: A XOR B: 1010 (ravno A)  
+
+
+3. Reshenie (A XOR B) XOR A 
+
+       A XOR B = A
+       A XOR A = B
+   Otvet: B

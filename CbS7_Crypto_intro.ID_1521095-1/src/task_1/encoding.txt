@@ -1,0 +1,11 @@
+1. Perevod s kodirovke ASCII
+
+  Otvet:  School-21
+  
+
+2. Perevod s kodirovke UTF-8
+ 
+   Otvet:  съешь ещё этих мягких французских булок, да выпей чаю
+   
+   
+3.  0JXRhdCw0Lsg0JPRgNC10LrQsCDRh9C10YDQtdC3INGA0LXQutGD

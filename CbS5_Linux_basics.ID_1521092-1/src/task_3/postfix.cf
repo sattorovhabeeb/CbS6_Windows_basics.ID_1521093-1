@@ -1,0 +1,18 @@
+relayhost = [smtp.yandex.ru]:587
+
+smtp_sasl_auth_enable = yes
+smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
+smtp_sasl_security_options = noanonymous
+smtp_sasl_mechanism_filter = plain, login
+
+smtp_generic_maps = hash:/etc/postfix/generic
+
+smtp_tls_security_level = encrypt
+smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt
+smtp_tls_wrappermode = no
+
+inet_protocols = ipv4    
+smtp_address_preference = ipv4
+myhostname = kali-hab.local
+mydomain = localdomain  
+myorigin = /etc/mailname
