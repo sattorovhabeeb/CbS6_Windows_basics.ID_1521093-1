@@ -1,0 +1,22 @@
+1. ALGORITM SHIFROVANIYA:
+	RC4 (Rivest Cipher 4) - potokovyi shifr.
+___________________________
+
+	
+2. FLAG:
+	S21{my_f4v0rit3_c1ph3r_i5_RC4}
+___________________________
+
+
+3. OSHIBKI REALIZACII
+
+	1- OSHIBKA:
+	funkciya  a(b) - KSA (Key Scheduling Algorithm)
+	stroka: j = (j + d[i] + b[i % c]) % 255
+	doljna byt'                         256
+	
+	2- OSHIBKA:
+	funkcia  b(c) - PRGA (Pseudo-Random Generation Algorithm)
+	stroka: k = c[(c[i] + c[i]) % 256]
+	dokgno byt'            [j]
+	

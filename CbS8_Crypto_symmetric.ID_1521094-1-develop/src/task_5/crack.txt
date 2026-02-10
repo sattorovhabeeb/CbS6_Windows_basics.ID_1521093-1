@@ -1,0 +1,6 @@
+1.FLAG:
+	S21{th1s_n0nc3_is_n0n_s3ns3_ch4_ch4_ch4}
+
+2. UYAZVIMOST': Na 12- stroke:
+	nonce = struct.pack("<Q", random.randint(1, 2**64 - 1))
+	nonce ispol'zuet tikushie vremya ustroystva!

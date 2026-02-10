@@ -1,0 +1,15 @@
+OSHIBKI v strokax 30; 31:
+
+    Alice ispol'zuet svoy public key, vmesto klucha Boba.
+    alice_secret = compute_shared_secret(alice_public, alice_private, p)
+    
+    Bob ispolzuet svoy public key, vmesto klucha Alice.
+     bob_secret = compute_shared_secret(bob_public, bob_private, p)
+
+
+
+PRAVIL'NYI OTVET: 
+
+    # STROKI 30; 31; DOLJNY BYT' TAKIMI:
+alice_secret = compute_shared_secret(bob_public, alice_private, p)
+bob_secret = compute_shared_secret(alice_public, bob_private, p) 

@@ -1,0 +1,5 @@
+Флаг изначальная строка plaintext: 
+    S21{good_job!1!}
+
+Режим работы:
+     ECB (Electronic Codebook)

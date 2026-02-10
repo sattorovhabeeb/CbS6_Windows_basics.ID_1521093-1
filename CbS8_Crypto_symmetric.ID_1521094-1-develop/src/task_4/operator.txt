@@ -1,0 +1,11 @@
+REJIMY:
+
+	1. some_operating_mode_1.py: ECB.
+		
+	2. some_operating_mode_2.py: CBC. 
+
+	3. some_operating_mode_3.py: CFB.
+
+	4. some_operating_mode_4.py: OFB.
+
+	5. some_operating_mode_5.py: CTR.
