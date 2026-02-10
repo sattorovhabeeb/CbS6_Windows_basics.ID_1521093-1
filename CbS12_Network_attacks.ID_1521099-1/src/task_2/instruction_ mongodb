@@ -1,0 +1,29 @@
+1. Komanda dlya ispolneniya scripta:
+     chmod +x scan.py
+     
+2. Prosnotr spravki:
+     python3 scan.py
+
+3. Ustanovka mongodb dlya testirovaniya:
+     sudo apt install mongodb -y
+
+4. Zapusk mongodb:
+     sudo systemctl start mongodb
+
+5. Proverka chto mongodb zapushena:
+     sudo systemctl status mongodb
+--------------
+
+ ZAPUSK SCANERA
+ 
+6. Skanirovanie local'nogo hosta:
+     python3 scan.py 127.0.0.1
+
+7. Scan nestandartnogo porta:
+     python3 scan.py 127.0.0.1 27018
+
+8. Scan podseti:
+     python3 scan.py 192.168.1.0/24
+
+9. Ostanovka i ochistka:
+     sudo systemctl stop mongodb

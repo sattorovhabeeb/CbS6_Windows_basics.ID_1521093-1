@@ -1,0 +1,11 @@
+ZAPROS DLYA FOFA:
+
+server="nginx/1.12.0"
+
+PRIMER IP- adersa (potencialno uyazvimyi):
+
+ 1.GERMANY -  NGINX 1.12.0
+   46.4.98.19 
+
+ 2.USA  - NGINX/1.12.0
+   104.238.138.112 

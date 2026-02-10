@@ -1,0 +1,165 @@
+
+<filter>
+	<rule>
+		<id></id>
+		<tracker>1768857263</tracker>
+		<type>block</type>
+		<interface>lan</interface>
+		<ipprotocol>inet</ipprotocol>
+		<tag></tag>
+		<tagged></tagged>
+		<max></max>
+		<max-src-nodes></max-src-nodes>
+		<max-src-conn></max-src-conn>
+		<max-src-states></max-src-states>
+		<statetimeout></statetimeout>
+		<statetype><![CDATA[keep state]]></statetype>
+		<os></os>
+		<protocol>tcp</protocol>
+		<source>
+			<any></any>
+		</source>
+		<destination>
+			<any></any>
+			<port>22</port>
+		</destination>
+		<descr><![CDATA[Block SSH from LAN]]></descr>
+		<updated>
+			<time>1768857263</time>
+			<username><![CDATA[Shool21@10.117.234.225 (Local Database)]]></username>
+		</updated>
+		<created>
+			<time>1768857263</time>
+			<username><![CDATA[Shool21@10.117.234.225 (Local Database)]]></username>
+		</created>
+	</rule>
+	<rule>
+		<id></id>
+		<tracker>1768857043</tracker>
+		<type>block</type>
+		<interface>lan</interface>
+		<ipprotocol>inet</ipprotocol>
+		<tag></tag>
+		<tagged></tagged>
+		<max></max>
+		<max-src-nodes></max-src-nodes>
+		<max-src-conn></max-src-conn>
+		<max-src-states></max-src-states>
+		<statetimeout></statetimeout>
+		<statetype><![CDATA[keep state]]></statetype>
+		<os></os>
+		<protocol>tcp</protocol>
+		<source>
+			<any></any>
+		</source>
+		<destination>
+			<any></any>
+			<port>25</port>
+		</destination>
+		<descr><![CDATA[Block SMTP outside work hours]]></descr>
+		<created>
+			<time>1768857043</time>
+			<username><![CDATA[Shool21@10.117.234.225 (Local Database)]]></username>
+		</created>
+		<updated>
+			<time>1768858295</time>
+			<username><![CDATA[Shool21@10.117.234.225 (Local Database)]]></username>
+		</updated>
+	</rule>
+	<rule>
+		<id></id>
+		<tracker>1768855893</tracker>
+		<type>block</type>
+		<interface>lan</interface>
+		<ipprotocol>inet</ipprotocol>
+		<tag></tag>
+		<tagged></tagged>
+		<max></max>
+		<max-src-nodes></max-src-nodes>
+		<max-src-conn></max-src-conn>
+		<max-src-states></max-src-states>
+		<statetimeout></statetimeout>
+		<statetype><![CDATA[keep state]]></statetype>
+		<os></os>
+		<protocol>tcp</protocol>
+		<source>
+			<any></any>
+		</source>
+		<destination>
+			<any></any>
+			<port>3389</port>
+		</destination>
+		<descr><![CDATA[Block RDP from LAN]]></descr>
+		<updated>
+			<time>1768855893</time>
+			<username><![CDATA[Shool21@10.117.234.225 (Local Database)]]></username>
+		</updated>
+		<created>
+			<time>1768855893</time>
+			<username><![CDATA[Shool21@10.117.234.225 (Local Database)]]></username>
+		</created>
+	</rule>
+	<rule>
+		<type>pass</type>
+		<ipprotocol>inet</ipprotocol>
+		<descr><![CDATA[Default allow LAN to any rule]]></descr>
+		<interface>lan</interface>
+		<tracker>0100000101</tracker>
+		<source>
+			<network>lan</network>
+		</source>
+		<destination>
+			<any></any>
+		</destination>
+	</rule>
+	<rule>
+		<type>pass</type>
+		<ipprotocol>inet6</ipprotocol>
+		<descr><![CDATA[Default allow LAN IPv6 to any rule]]></descr>
+		<interface>lan</interface>
+		<tracker>0100000102</tracker>
+		<source>
+			<network>lan</network>
+		</source>
+		<destination>
+			<any></any>
+		</destination>
+	</rule>
+	<rule>
+		<id></id>
+		<tracker>1768856818</tracker>
+		<type>pass</type>
+		<interface>lan</interface>
+		<ipprotocol>inet</ipprotocol>
+		<tag></tag>
+		<tagged></tagged>
+		<max></max>
+		<max-src-nodes></max-src-nodes>
+		<max-src-conn></max-src-conn>
+		<max-src-states></max-src-states>
+		<statetimeout></statetimeout>
+		<statetype><![CDATA[keep state]]></statetype>
+		<os></os>
+		<protocol>tcp</protocol>
+		<source>
+			<any></any>
+		</source>
+		<destination>
+			<any></any>
+			<port>25</port>
+		</destination>
+		<descr><![CDATA[Allow SMTP during work hours]]></descr>
+		<sched>WorkTime</sched>
+		<updated>
+			<time>1768856818</time>
+			<username><![CDATA[Shool21@10.117.234.225 (Local Database)]]></username>
+		</updated>
+		<created>
+			<time>1768856818</time>
+			<username><![CDATA[Shool21@10.117.234.225 (Local Database)]]></username>
+		</created>
+	</rule>
+	<separator>
+		<lan></lan>
+	</separator>
+</filter>

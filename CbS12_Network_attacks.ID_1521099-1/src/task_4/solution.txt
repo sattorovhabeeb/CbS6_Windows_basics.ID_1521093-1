@@ -1,0 +1,3 @@
+Флаг: S21{w00w_h1d3_4nd_s33k_1ns1d3_dns}
+
+Средство защиты: NIDS (Система обнаружения вторжений), например, Suricata или Snort, а также DNS Firewall / DNS Security solutions.

@@ -1,0 +1,4 @@
+1. zapusk:
+   mitmproxy -s interceptor.py
+   
+2. В браузере Firefox (с настроенным прокси) зайди на сайт для тестов, например: http://testphp.vulnweb.com/login.php   

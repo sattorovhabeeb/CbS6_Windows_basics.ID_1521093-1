@@ -1,0 +1,14 @@
+# 1. Blokirovka RDP (port 3389) iz local'noy seti
+iptables -A INPUT -p tcp --dport 3389 -j REJECT
+
+
+# 2. Rabota s SMTP (port 25) tol'ko vo vtornic s 07:00 do 22:59
+# Snachala pazreshaem v ukazannoe vremya
+iptables -A INPUT -p tcp -- dport 25 -m timestart 07:00 --timestop 22:59 --weekdays Teu -j ACCEPT
+
+#Zatem blokiruem vse ostal'noe dlya etogo porta
+iptables -A INPUT -p tcp --dport 25 -j REJECT
+
+
+# 3. Blokirovka SSH (port 22) iz local'noy seti
+iptables -A INPUT -p tcp --dport 22 -j REJECT
